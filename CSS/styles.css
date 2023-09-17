@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  display-: block;
+  display: block;
   text-align: center;
 }
 .h1-wraper {
@@ -16,9 +16,8 @@ h1 {
   margin-top: 30px;
 }
 .flex-container {
-  background: black;
+  background: white;
   display: inline-block;
-  border: 5px solid black;
 }
 .wraper {
   display: grid;
@@ -27,7 +26,7 @@ h1 {
   grid-gap: 5px;
 }
 
-.innerbox {
+.box {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -36,45 +35,96 @@ h1 {
   background: white;
 }
 
-.box0 {
-  border-radius: 10px;
+.zero {
+  border: 5px solid black;
 }
-.box1 {
-  border-radius: 10px;
+.one {
+  border: 5px solid black;
 }
-.box2 {
-  border-radius: 10px;
+.two {
+  border: 5px solid black;
 }
-.box3 {
-  border-radius: 10px;
+.three {
+  border: 5px solid black;
 }
-.box4 {
-  border-radius: 10px;
+.four  {
+  border: 5px solid black;
 }
-.box5 {
-  border-radius: 10px;
+.five {
+  border: 5px solid black;
 }
-.box6 {
-  border-radius: 10px;
+.six {
+  border: 5px solid black;
 }
-.box7 {
-  border-radius: 10px;
+.seven {
+  border: 5px solid black;
 }
-.box8 {
-  border-radius: 10px;
+.eight {
+  border: 5px solid black;
 }
-.box9 {
-  border-radius: 10px;
+.nine {
+  border: 5px solid black;
 }
 
 footer {
     height: 50px;
     margin-top: 30px;
+    justify-content: center;
 }
 
 .button {
-    border-radius: 10px;
+    border: 3px solid black;
+    border-radius: 20px;
     background-color: aquamarine;
     width: 100px;
-    height: 20px;
+    height: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; 
+  }
+  
+  #message {
+    margin-bottom: 20px; 
+    background-color: blanchedalmond;
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+    border: 3px solid black;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Apply the animation to the player classes */
+  .X {
+    background-color: transparent; /* Set the initial background color to transparent */
+    color: limegreen; /* Set the color for 'X' player to lime green */
+    transition: background-color 0.3s ease; /* Add transition for background-color */
+    animation: spin 0.5s linear; /* Apply the spin animation */
+  }
+  
+  .O {
+    background-color: transparent; /* Set the initial background color to transparent */
+    color: orange; /* Set the color for 'O' player to orange */
+    transition: background-color 0.3s ease; /* Add transition for background-color */
+    animation: spin 0.5s linear; /* Apply the spin animation */
+  }
+  
+  /* Add winner-specific styles */
+  .X-winner, .O-winner {
+    background-color: transparent !important; /* Reset background color to transparent */
+    animation: none !important; /* Disable spin animation for winners */
+    color: white; /* Set text color for better readability */
+    font-weight: bold; /* Add bold text for winners */
+  }
