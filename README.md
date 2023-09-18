@@ -27,11 +27,6 @@ The game checks for a winner after each move and displays a message if a player 
 
 After the game ends, the "Replay" button becomes visible, allowing players to start a new game.
 
-Development and Customization
-You can customize this game by modifying the HTML, CSS, and JavaScript as needed. You can change the game's appearance, add animations, or implement additional features.
-
-Feel free to adapt the code for your specific needs and have fun playing and building upon it!
-
 Author
 This Tic-Tac-Toe game was created by [Your Name].
 
