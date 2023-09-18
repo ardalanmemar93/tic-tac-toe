@@ -37,33 +37,43 @@ h1 {
 
 .zero {
   border: 5px solid black;
+  border-radius: 20px;
 }
 .one {
   border: 5px solid black;
+  border-radius: 20px;
 }
 .two {
   border: 5px solid black;
+  border-radius: 20px;
 }
 .three {
   border: 5px solid black;
+  border-radius: 20px;
 }
 .four  {
   border: 5px solid black;
+  border-radius: 20px;
 }
 .five {
   border: 5px solid black;
+  border-radius: 20px;
 }
 .six {
   border: 5px solid black;
+  border-radius: 20px;
 }
 .seven {
   border: 5px solid black;
+  border-radius: 20px;
 }
 .eight {
   border: 5px solid black;
+  border-radius: 20px;
 }
 .nine {
   border: 5px solid black;
+  border-radius: 20px;
 }
 
 footer {
@@ -72,7 +82,7 @@ footer {
     justify-content: center;
 }
 
-.button {
+#start-button {
     border: 3px solid black;
     border-radius: 20px;
     background-color: aquamarine;
@@ -96,6 +106,16 @@ footer {
     border-radius: 10px;
     border: 3px solid black;
   }
+  #replay-button {
+    display: none;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: aquamarine;
+    width: 100px;
+    height: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
   
   @keyframes spin {
     0% {
@@ -108,23 +128,21 @@ footer {
   
   /* Apply the animation to the player classes */
   .X {
-    background-color: transparent; /* Set the initial background color to transparent */
-    color: limegreen; /* Set the color for 'X' player to lime green */
-    transition: background-color 0.3s ease; /* Add transition for background-color */
-    animation: spin 0.5s linear; /* Apply the spin animation */
+    background-color: transparent; 
+    color: limegreen; 
+    transition: background-color 0.3s ease; 
+    animation: spin 0.5s ease-in; 
   }
   
   .O {
-    background-color: transparent; /* Set the initial background color to transparent */
-    color: orange; /* Set the color for 'O' player to orange */
-    transition: background-color 0.3s ease; /* Add transition for background-color */
-    animation: spin 0.5s linear; /* Apply the spin animation */
+    background-color: transparent; 
+    color: orange; 
+    transition: background-color 0.3s ease;
+    animation: spin 0.5s ease-in; 
   }
   
   /* Add winner-specific styles */
   .X-winner, .O-winner {
-    background-color: transparent !important; /* Reset background color to transparent */
-    animation: none !important; /* Disable spin animation for winners */
-    color: white; /* Set text color for better readability */
-    font-weight: bold; /* Add bold text for winners */
+    background-color: transparent !important; 
+    animation: none 
   }
