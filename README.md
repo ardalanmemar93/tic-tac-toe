@@ -35,7 +35,3 @@ Feel free to adapt the code for your specific needs and have fun playing and bui
 Author
 This Tic-Tac-Toe game was created by [Your Name].
 
-License
-This project is open-source and available under the MIT License.
-
-Enjoy playing Tic-Tac-Toe! If you have any questions or suggestions, please feel free to reach out. -->
