@@ -1,6 +1,5 @@
 
 //constants 
-document.addEventListener('DOMContentLoaded', () => {
     const tiles = document.querySelectorAll('.box');
     const startButton = document.getElementById('start-button');
     const replayButton = document.getElementById('replay-button');
@@ -95,5 +94,4 @@ document.addEventListener('DOMContentLoaded', () => {
       gameOver = false;
       board = ['', '', '', '', '', '', '', '', ''];
     }
-  });
   
